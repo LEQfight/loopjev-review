@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loopjev-code-review"
+version = "0.1.0"
+description = "A minimal source review package for Loop-JEV on top of Kev"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=3.0",
+    "numpy>=2.5.3",
+    "peft>=0.21",
+    "pydantic>=2.9",
+    "scikit-learn>=1.9.1",
+    "torch>=2.6,<2.9",
+    "transformers>=5.17,<6",
+]
+
+[project.urls]
+Repository = "https://github.com/LEQfight/loopjev-review"
+Upstream = "https://github.com/jaredpalmer/kev"
+
+[tool.setuptools]
+packages = ["kev"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "review_checks"]
+markers = ["server: needs a running Kev/System One endpoint"]
