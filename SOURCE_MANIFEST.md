@@ -38,12 +38,24 @@ the local source used to write the review.
 | `tests/test_loop_integration.py` | `66723b496608b881a1453708749af7f2fb48170a3a8a43686756238db4fcfa45` |
 | `tests/test_multik_loss.py` | `755183af1465139314dc3535179206fd192c572c02e10a3f3ac84a57acbebcbd` |
 
+## Dataset review sample
+
+| File | SHA-256 |
+| --- | --- |
+| `datasets/samples/public19-1k-validation-v1-sample100.jsonl` | `ca7079ca0c79c72d5828133f9568dbf85c7ac86bb4bcfd9e444cd2d66f4efe94` |
+
+The sample contains 100 records / 117 questions: 39 train, 30 development,
+and 31 test. It covers all 13 trainable sources and all 6 held-out sources. It
+is a review sample, not the complete frozen benchmark and not an
+evaluation-equivalent subset.
+
 ## Exclusions
 
 The package intentionally excludes model weights, adapters, checkpoints,
-training/evaluation artifacts, SwanLab records, raw datasets, launch scripts,
-server inventory, historical reports, notebooks, web playgrounds, and
-unrelated upstream utilities.
+training/evaluation artifacts, SwanLab records, full raw datasets, launch
+scripts, server inventory, historical reports, notebooks, web playgrounds, and
+unrelated upstream utilities. Only the 100-record inspection sample above is
+included.
 
 ## Upstream context
 

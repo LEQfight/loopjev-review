@@ -5,6 +5,11 @@
 隐状态回注 -> Pointer Head 打分 -> Loss -> 参数更新 -> Checkpoint 重载”
 逐段核验方法是否忠实实现。
 
+仓库同时提供 100 条按 split/source 分层的多任务数据集样例，用于检查输入
+schema、问题类型和 label 映射；它不是正式 benchmark，也不能用其指标与
+全量结果比较。入口见
+[`datasets/samples/README.md`](datasets/samples/README.md)。
+
 源码来自本地最新工作区
 `D:\MyProgram\Python\jev_benchmark_engineered\loopjev\kev`，核心文件按字节
 原样复制，未在此包内修复。文件哈希和提取范围见

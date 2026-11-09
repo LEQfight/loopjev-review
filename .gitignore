@@ -8,5 +8,6 @@ build/
 dist/
 runs/
 checkpoints/
+datasets/public19-1k-validation-v1/
 *.safetensors
 *.pt

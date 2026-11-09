@@ -1,0 +1,73 @@
+{
+  "name": "public19-1k-validation-v1-sample100",
+  "kind": "review_sample",
+  "warning": "This is a small stratified sample for schema and task inspection. It is not the complete benchmark, not an evaluation-equivalent subset, and its metrics must not be compared with full-suite results.",
+  "records": 100,
+  "questions": 117,
+  "split_counts": {
+    "train": 39,
+    "development": 30,
+    "test": 31
+  },
+  "source_counts": {
+    "train": {
+      "agnews": 3,
+      "amazon": 3,
+      "arc": 3,
+      "banking77": 3,
+      "boolq": 3,
+      "csqa": 3,
+      "dbpedia14": 3,
+      "imdb": 3,
+      "mnli": 3,
+      "openbookqa": 3,
+      "sst5": 3,
+      "trec": 3,
+      "yelp": 3
+    },
+    "development": {
+      "agnews": 2,
+      "amazon": 2,
+      "arc": 2,
+      "banking77": 2,
+      "boolq": 2,
+      "csqa": 2,
+      "dbpedia14": 2,
+      "emotion": 2,
+      "imdb": 2,
+      "mmlu": 2,
+      "mnli": 2,
+      "openbookqa": 1,
+      "paws": 1,
+      "qnli": 1,
+      "sciq": 1,
+      "sst5": 1,
+      "trec": 1,
+      "tweet_offensive": 1,
+      "yelp": 1
+    },
+    "test": {
+      "agnews": 2,
+      "amazon": 2,
+      "arc": 2,
+      "banking77": 2,
+      "boolq": 2,
+      "csqa": 2,
+      "dbpedia14": 2,
+      "emotion": 2,
+      "imdb": 2,
+      "mmlu": 2,
+      "mnli": 2,
+      "openbookqa": 2,
+      "paws": 1,
+      "qnli": 1,
+      "sciq": 1,
+      "sst5": 1,
+      "trec": 1,
+      "tweet_offensive": 1,
+      "yelp": 1
+    }
+  },
+  "sampling": "Source-stratified deterministic selection: candidates are sorted by sha256(_meta.id), with one record per source before extra rounds.",
+  "sha256": "ca7079ca0c79c72d5828133f9568dbf85c7ac86bb4bcfd9e444cd2d66f4efe94"
+}
